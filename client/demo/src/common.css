@@ -1,0 +1,69 @@
+.header{
+    height: 100px;
+    width:100%;
+    background-color: rgb(69, 212, 178);
+}
+
+.footer{
+    height: 100px;
+    width:100%;
+    background-color: rgb(131, 219, 175);
+}
+
+.myTable{
+    margin: 20px;
+    width: 80%;
+}
+
+.loginTable{
+    width: 400px;
+}
+
+.heart-checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .heart-checkbox input[type='checkbox'] {
+    display: none;
+  }
+  
+  .heart-checkbox .heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid #e60023;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .heart-checkbox input[type='checkbox']:checked + .heart {
+    background-color: #e60023;
+  }
+  
+  .heart-checkbox .heart::before,
+  .heart-checkbox .heart::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #e60023;
+    border-radius: 50%;
+  }
+  
+  .heart-checkbox .heart::before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+  
+  .heart-checkbox .heart::after {
+    right: 0;
+    transform: rotate(-45deg);
+  }
+
